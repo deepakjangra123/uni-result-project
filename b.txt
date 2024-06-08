@@ -1,0 +1,20 @@
+
+
+
+
+//batch btech 20 cse
+http://210.212.119.171/exam/results/2023/10/BTechCSE_4SemRe_May-23_031023.TXT
+
+
+http://210.212.119.171/exam/results/2021/12/BTechCSE_1Sem_Dec-20_141221.TXT
+http://210.212.119.171/exam/results/2022/2/BTechCSE_2Sem_May-21_150222.TXT
+http://210.212.119.171/exam/results/2022/7/BTechCSE_3Sem_Dec-21_120722.TXT
+http://210.212.119.171/exam/results/2022/11/BTechCSE_4Sem_May-22_181122.TXT
+http://210.212.119.171/exam/results/2023/5/BTechCSE_5Sem_Dec-22_080523.TXT
+http://210.212.119.171/exam/results/2023/9/BTechCSE_6SemMain_May-23_080923.TXT
+http://210.212.119.171/exam/results/2024/04/BTechCSEMain_7SemRe_Dec-23_020424.TXT
+
+// batch btech 19 cse
+http://210.212.119.171/exam/results/2022/7/BTechCSE_5Sem_Dec-21_050722.TXT
+http://210.212.119.171/exam/results/2023/4/BTechCSE_7Sem_Dec-22_100423.TXT
+http://210.212.119.171/exam/results/2024/04/BTechCVLNCC_5Sem_Dec_100424.TXT

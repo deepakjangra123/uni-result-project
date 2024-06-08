@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGPA Finder</title>
+  </head>
+  <body>
+    <h2>SGPA Finder</h2>
+    <form id="sgpaForm">
+      <label for="rollNumber">Enter Roll Number:</label><br />
+      <input type="text" id="rollNumber" name="rollNumber" /><br /><br />
+      <button type="submit">Find SGPA</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+      // Function to handle form submission
+      document
+        .getElementById("sgpaForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+          var rollNumber = document.getElementById("rollNumber").value.trim();
+          if (rollNumber === "") {
+            alert("Please enter a roll number.");
+            return;
+          }
+
+          // Fetch data from the URL
+          fetch(
+            "http://210.212.119.171/exam/results/2024/05/BTechCSENCC_5SemMain_Dec23_060524.TXT"
+          )
+            .then((response) => response.text())
+            .then((data) => {
+              // Split the text by lines
+              var lines = data.split("\n");
+              // Find the line containing the roll number
+              var rollIndex = lines.findIndex((line) =>
+                line.startsWith(rollNumber)
+              );
+              if (rollIndex !== -1) {
+                // Display the result
+                var resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = lines[rollIndex];
+              } else {
+                alert("Roll number not found.");
+              }
+            })
+            .catch((error) => {
+              console.error("Error fetching data:", error);
+            });
+        });
+    </script>
+  </body>
+</html>
